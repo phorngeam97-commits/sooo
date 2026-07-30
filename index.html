@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeoulGlow - ហាងលក់ផលិតផលSkincare កូរ៉េ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Kantumruy Pro', sans-serif, Arial;
+        }
+        body {
+            background-color: #faf7f5;
+            color: #333;
+        }
+        /* Header */
+        header {
+            background: #ffffff;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff6b81;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: #ff6b81;
+        }
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #ffccd5 0%, #ffe3e3 100%);
+            padding: 80px 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .hero-content {
+            max-width: 500px;
+        }
+        .hero-content h1 {
+            font-size: 40px;
+            color: #2c2c2c;
+            margin-bottom: 20px;
+        }
+        .hero-content p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .btn {
+            background-color: #ff6b81;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #ff4757;
+        }
+        /* Products Section */
+        .container {
+            padding: 50px 5%;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 28px;
+            color: #333;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+        }
+        .product-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .product-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .price {
+            color: #ff6b81;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        /* Footer */
+        footer {
+            background: #2c2c2c;
+            color: white;
+            text-align: center;
+            padding: 30px 5%;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">✨ SeoulGlow</div>
+        <nav>
+            <a href="#">ទំព័រដើម</a>
+            <a href="#">ផលិតផល</a>
+            <a href="#">Skincare Routine</a>
+            <a href="#">អំពីយើង</a>
+            <a href="#">ទំនាក់ទំនង</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>ស្បែកមុខស្រស់ស្អាតបែបធម្មជាតិជាមួយ Skincare កូរ៉េ</h1>
+            <p>ជម្រើសផលិតផលសុទ្ធ 100% នាំចូលផ្ទាល់ពីประเทศកូរ៉េ ជួយឱ្យស្បែកមុខសភ្លឺថ្លា ក្មេងជាងវ័យ និងមានសំណើម។</p>
+            <a href="#" class="btn">ទិញឥឡូវនេះ</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <div class="container">
+        <h2 class="section-title">ផលិតផលលក់ដាច់បំផុត</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=500&q=80" alt="Serum">
+                <h3>Anua Heartleaf Soothing Serum</h3>
+                <div class="price">$24.00</div>
+                <a href="#" class="btn" style="padding: 8px 20px; font-size: 14px;">បញ្ជាទិញ</a>
+            </div>
+            <div class="product-card">
+                <img src="https://static.wixstatic.com/media/04acaa_dd05ae3d687f4fba916bfff8668e8638~mv2.jpg/v1/fill/w_925,h_613,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/04acaa_dd05ae3d687f4fba916bfff8668e8638~mv2.jpg" alt="Sunscreen">
+                <h3>sun screen korean</h3>
+                <div class="price">$18.50</div>
+                <a href="#" class="btn" style="padding: 8px 20px; font-size: 14px;">បញ្ជាទិញ</a>
+            </div>
+            <div class="product-card">
+                <img src="../posting/Image/rt.avif" alt="Toner">
+                <h3>Laneige Cream Skin Toner</h3>
+                <div class="price">$28.00</div>
+                <a href="#" class="btn" style="padding: 8px 20px; font-size: 14px;">បញ្ជាទិញ</a>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=500&q=80" alt="Mask">
+                <h3>COSRX Snail Mucin Essence</h3>
+                <div class="price">$21.00</div>
+                <a href="#" class="btn" style="padding: 8px 20px; font-size: 14px;">បញ្ជាទិញ</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 SeoulGlow Skincare. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+    </footer>
+
+</body>
+</html>
